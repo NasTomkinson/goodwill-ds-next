@@ -19,7 +19,9 @@
       }
     ],
     "paths": {
-      "@/components/*": ["./*"]
+      "@components/*": ["./app/components/*"],
+      "@composites/*": ["./app/composites/*"],
+      "@graphql/*": ["./app/graphql/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
