@@ -1,0 +1,29 @@
+query ComponentCompositesAccordions(
+  $documentId: ID!
+  $status: PublicationStatus
+) {
+  page(documentId: $documentId, status: $status) {
+    composites {
+      __typename
+      ... on ComponentCompositesAccordions {
+        id
+        heading
+        subheading
+        accordion {
+          copy
+          heading
+          id
+        }
+      }
+      ... on ComponentCompositesTestimonials {
+        id
+        heading
+        subheading
+      }
+      ... on Error {
+        code
+        message
+      }
+    }
+  }
+}

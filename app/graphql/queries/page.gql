@@ -1,0 +1,7 @@
+query Pages($slug: String, $status: PublicationStatus) {
+  pages(filters: { slug: { eq: $slug } }, status: $status) {
+    slug
+    title
+    documentId
+  }
+}

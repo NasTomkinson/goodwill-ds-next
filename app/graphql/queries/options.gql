@@ -1,0 +1,9 @@
+query SiteOption {
+  siteOption {
+    siteName
+    siteDescription
+    homepage {
+      documentId
+    }
+  }
+}
