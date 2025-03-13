@@ -1,1 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import "tailwindcss";
+
+@keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@utility container {
+  @apply mx-auto px-4;
+}
+
+@theme {
+  --font-main: "Open Sans";
+  --radius: 0.75rem;
+}
+
+details {
+  summary {
+    svg {
+      @apply transition-all duration-300 ease-out size-8;
+    }
+  }
+}
+
+details[open] {
+  summary {
+    svg {
+      @apply transform rotate-45;
+    }
+  }
+  div {
+    animation: fadeInFromTop 150ms ease-out;
+  }
+}

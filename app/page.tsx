@@ -1,3 +1,5 @@
+import DynamicZone from "./composites/DynamicZone.tsx";
+
 export default function Home() {
-  return <div> Hello world! </div>;
+  return <DynamicZone documentId="nh897i3qefsqk3td35hc0s8n" />;
 }

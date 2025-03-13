@@ -18,10 +18,11 @@
         "name": "next"
       }
     ],
+    "baseUrl": "app/",
     "paths": {
-      "@components/*": ["./app/components/*"],
-      "@composites/*": ["./app/composites/*"],
-      "@graphql/*": ["./app/graphql/*"]
+      "@components/*": ["components/*"],
+      "@composites/*": ["composites/*"],
+      "@graphql/*": ["graphql/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
